@@ -42,7 +42,7 @@
     <body>
        
         <h1>Ingreso de empresa al mundo AppEx</h1>
-        <form action="action">
+        <form action="FormularioEmpresas_ctr.jsp" method="post">
             <div class="form-group">
                 <label for="nombreEmpresa">Nombre de la Empresa</label>
                 <input id="nombreEmpresa" name="nombreEmpresa" type="text" maxlength="50" placeholder="Nombre del negocio" required/>
@@ -61,8 +61,8 @@
             </div>
             <div class="form-group">
                 <label>Tipo de Empresa</label><br>
-                <input type="radio" name="tipoEmpresa" id="estadoEmpresaNatural" checked required><label for="estadoEmpresaNatural">Natural</label>
-                <input type="radio" name="tipoEmpresa" id="estadoEmpresaJuridica"><label for="estadoEmpresaJuridica">Jurídica</label>
+                <input type="radio" value="true" name="tipoEmpresa" id="estadoEmpresaNatural" checked required><label for="estadoEmpresaNatural">Natural</label>
+                <input type="radio" value="false" name="tipoEmpresa" id="estadoEmpresaJuridica"><label for="estadoEmpresaJuridica">Jurídica</label>
             </div>
             <div class="form-group">
                 <label for="codigoCiiu">Actividad económica de la Empresa (código CIIU)</label>
@@ -70,8 +70,8 @@
             </div>
             <div class="form-group">
                 <label>Estado de la Empresa</label><br>
-                <input type="radio" name="estadoEmpresa" id="estadoEmpresaActivo" checked required><label for="estadoEmpresaActivo">Activo</label>
-                <input type="radio" name="estadoEmpresa" id="estadoEmpresaInactivo"><label for="estadoEmpresaInactivo">Inactivo</label>
+                <input type="radio" value="true" name="estadoEmpresa" id="estadoEmpresaActivo" checked required><label for="estadoEmpresaActivo">Activo</label>
+                <input type="radio" value="false" name="estadoEmpresa" id="estadoEmpresaInactivo"><label for="estadoEmpresaInactivo">Inactivo</label>
             </div>
             <div class="form-group">
                 <label for="departamento">Departamento</label>
